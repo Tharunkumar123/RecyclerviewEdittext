@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:layout_marginTop="@dimen/margins"
+        android:layout_marginBottom="@dimen/image_bottom"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/base_line"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/johnwick_image" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        android:text="John wick "
+        android:textColor="#000000"
+        android:textSize="@dimen/genre_textsize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/year"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/movie_image"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_genres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        android:text="Action thriller"
+        android:textColor="#000000"
+        android:textSize="@dimen/genre_textsize"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/movie_title" />
+
+    <TextView
+        android:id="@+id/movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rating_top"
+        android:text="7.5/10"
+        android:textColor="#000000"
+        android:textSize="@dimen/rating_textsize"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/movie_genres" />
+
+    <TextView
+        android:id="@+id/base_line"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/baseline_height"
+        android:layout_marginStart="@dimen/baseline_marginstart"
+        android:layout_marginLeft="@dimen/baseline_margins"
+        android:layout_marginTop="@dimen/rating_top"
+        android:layout_marginEnd="@dimen/baseline_marginstart"
+        android:layout_marginRight="@dimen/baseline_margins"
+        android:background="#000000"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_rating" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margins"
+        android:gravity="center"
+        android:text="2014"
+        android:textColor="#000000"
+        android:textSize="@dimen/rating_textsize"
+        android:textStyle="bold"
+        android:background="#CFD8DC"
+        android:layout_marginStart="@dimen/year_left"
+        app:layout_constraintBottom_toBottomOf="@+id/movie_title"
+        app:layout_constraintStart_toEndOf="@+id/movie_title"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="@dimen/year_left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

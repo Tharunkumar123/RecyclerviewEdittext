@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="baseline_height">10.67dp</dimen>
+	<dimen name="baseline_margins">256.00dp</dimen>
+	<dimen name="baseline_marginstart">213.33dp</dimen>
+	<dimen name="baseline_margintop">21.33dp</dimen>
+	<dimen name="button_width">960.00dp</dimen>
+	<dimen name="image_bottom">42.67dp</dimen>
+	<dimen name="image_height">981.33dp</dimen>
+	<dimen name="image_width">1429.33dp</dimen>
+	<dimen name="margins">170.67dp</dimen>
+	<dimen name="rating_top">21.33dp</dimen>
+	<dimen name="spinner_width">746.67dp</dimen>
+	<dimen name="year_left">64.00dp</dimen>
+	<dimen name="genre_textsize">181.33sp</dimen>
+	<dimen name="rating_textsize">160.00sp</dimen>
+	<dimen name="title_textsize">213.33sp</dimen>
+</resources>
